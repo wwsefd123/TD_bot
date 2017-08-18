@@ -1,0 +1,75 @@
+<script type="text/javascript">
+    function loadPage() {
+        var swiper = new Swiper('.swiper-container', {
+                paginationClickable: true,
+                direction: 'vertical',
+                setWrapperSize : true,
+                height : '176'
+            });        
+    }
+    function date() {
+        var date = new Date();        
+        var today = date.getFullYear() + '.' + ('0' + (date.getMonth() + 1)).slice(-2) + '.' + ('0' + date.getDate()).slice(-2);
+        var today_time = date.getMonth() + '.' + date.getHours() + '.' + date.getMinutes();
+        $('.date .day').html(today);
+        $('.date .time').html(today_time);
+
+    }
+
+    $(function() {
+        stopTimer();
+        loadPage();
+        date();
+    });
+</script>
+<main id="wrap" class="wrap">
+    <header class="header">
+        <div class="header_wrap">
+            <h1 class="title"></h1>
+            <div class="date">
+                <span class="day"></span>
+                <span class="time"></span>
+            </div>
+    </header>
+    <section class="schedule_area">
+        <div class="schedule_wrap swiper-container">
+            <ul class="swiper-wrapper">
+                <li class="schedule_content swiper-slide on ">
+                    <span class="time">13:00 pm</span>
+                    <span class="title">디지털담벼락</span>                        
+                    <span class="place">평창 풍물시장</span>
+                </li>
+                <li class="schedule_content swiper-slide">
+                    <span class="time">13:00 pm</span>
+                    <span class="title">디지털담벼락</span>                        
+                    <span class="place">평창 풍물시장</span>
+                </li>                
+                <li class="schedule_content swiper-slide">
+                    <span class="time">13:00 pm</span>
+                    <span class="title">디지털담벼락</span>                        
+                    <span class="place">평창 풍물시장</span>
+                </li>    
+                <li class="schedule_content swiper-slide">
+                    <span class="time">13:00 pm</span>
+                    <span class="title">디지털담벼락</span>                        
+                    <span class="place">평창 풍물시장</span>
+                </li>    
+                <li class="schedule_content swiper-slide">
+                    <span class="time">13:00 pm</span>
+                    <span class="title">디지털담벼락</span>                        
+                    <span class="place">평창 풍물시장</span>
+                </li>    
+                <li class="schedule_content swiper-slide">
+                    <span class="time">13:00 pm</span>
+                    <span class="title">디지털담벼락</span>                        
+                    <span class="place">평창 풍물시장</span>
+                </li>   
+                <li class="schedule_content swiper-slide">
+                    <span class="time">13:00 pm</span>
+                    <span class="title">디지털담벼락</span>                        
+                    <span class="place">평창 풍물시장</span>
+                </li>                                                                              
+            </ul>
+        </div>
+    </section>
+</main>
